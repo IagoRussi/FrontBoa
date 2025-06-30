@@ -24,6 +24,7 @@
 /* Margem lateral esquerda da navbar */
 .ms-topbar {
   margin-left: 250px;
+  border-bottom: 1px solid white;
 }
 
 /* Área de links (Login/Cadastro) no topo */
@@ -94,6 +95,7 @@
   position: fixed;
   z-index: 1000;
   height: 100%;
+  border-right: solid 1px white;
 }
 
 /* Logo dentro da sidebar */
@@ -140,7 +142,7 @@
 
 /* Cor de fundo geral da sidebar */
 .bgPrinc{
-  background-color: grey;
+  background-color: black;
 }
 
 /* Caixa central com o formulário de URL */
@@ -201,7 +203,7 @@ footer {
   width: calc(100% - 250px);
   position: fixed;
   bottom: 0;
-  background-color: black;
+  border-top: 1px solid white;
 }
 
 /* ========== OUTROS ELEMENTOS ========== */
