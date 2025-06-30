@@ -1,143 +1,132 @@
+/* ========== ESTILOS GERAIS ========== */
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ========== RESPONSIVIDADE (TELAS PEQUENAS) ========== */
 @media (max-width: 767px) {
-    .sidebar {
-      display: none;
-    }
-   nav.navbar,
-    main,
-    footer {
-      margin-left: 0 !important;
-      width: 100% !important;
-    }
-
-    .content-container {
-      margin-left: 0 !important;
-      width: 100% !important;
-    }
+  .sidebar {
+    display: none;
   }
 
-  .ms-topbar {
+  nav.navbar,
+  main,
+  footer,
+  .content-container {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+
+/* ========== TOPO / NAVBAR ========== */
+
+/* Margem lateral esquerda da navbar */
+.ms-topbar {
   margin-left: 250px;
 }
 
+/* Área de links (Login/Cadastro) no topo */
 .navbartop {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
+
 .navbartop a {
   text-decoration: none;
 }
 
+/* Espaço à direita apenas no último link (Cadastro) */
 .navbartop a:last-of-type {
   margin-right: 5px;
 }
 
+/* Estilização dos links dentro do menu offcanvas */
 .navOffcanva a {
   padding-left: 10px;
   border-radius: 5px;
   color: white;
-
 }
 
-.offcanvas {
-  background-color: #18122B;
-  /* cor de fundo do offcanva */
-}
-
-.bgSidebar{
-  background-color: #393E46;
-  /* cor de fundo do offcanva */
-}
-
-.sidebarEsq{
-  width: 250px; 
-  background-color: #222831; 
-  position: fixed;
-   z-index: 1000; 
-   height: 100%;
-   /* sidebar esquerda */
-}
-
-.container-fluid a {
-  color: white;
-  margin-left: 10px;
-}
-
-.contPrincipal {
-    margin-left: 250px;
-}
-
-.containerURL {
-  max-width: 600px; 
-  width: 100%; 
-  background-color: #222831; 
-  border-radius: 20px; 
-  padding: 2rem; 
-  border: 1px solid #444;
-}
-
-.containerURL ul {
-   display: flex; 
-   align-items: center; 
-   margin-left: 37px; 
-   justify-content: center; 
-   border-bottom-color: #393E46;
-}
-
-.containerURL ul li a{
-  border: none; 
-  text-decoration: none; 
-  color: white;
-}
-
-.textoURL{
-  font-weight: bold; padding-bottom: 10px;
-}
-
-.fixed-top {
-  background-color: #222831;
-}
-
-.navbar-toggler {
-  color: #fff;
-}
-
-.navbar-toggler-icon {
-  color: #fff;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
+/* Cor de fundo do menu lateral (offcanvas) */
 .offcanvas {
   background-color: #0d1117;
   color: white;
 }
 
+/* Cor de fundo da barra superior (navbar) */
+.fixed-top {
+  background-color: #222831;
+}
+
+/* Ícone do botão hamburguer */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cor do botão hamburguer */
+.navbar-toggler {
+  color: #fff;
+}
+
+/* Hover no botão hamburguer */
+.navbar-toggler:hover {
+  background-color: #393E46;
+  border-radius: 5px;
+}
+
+/* Hover nos links do offcanvas */
+.offcanvas .nav-link:hover {
+  background-color: #393E46;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* ========== SIDEBAR ESQUERDA ========== */
+
+/* Cor de fundo geral da sidebar */
+.bgSidebar {
+  background-color: #393E46;
+}
+
+/* Estilo da sidebar à esquerda */
+.sidebarEsq {
+  width: 250px;
+  background-color: #222831;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+}
+
+/* Logo dentro da sidebar */
+.logoBoa {
+  position: relative;
+  left: 77px;
+  bottom: 7px;
+  margin-bottom: 20px;
+  width: 25px;
+  filter: invert(1);
+}
+
+/* Estilo da lista de histórico com scroll */
 .scroll {
   height: 600px;
   overflow-y: scroll;
 }
 
+/* Scrollbar personalizada */
 .scroll::-webkit-scrollbar {
   width: 10px;
-  /* Largura da barra */
 }
 
 .scroll::-webkit-scrollbar-track {
   background: #888;
-  /* Fundo da barra */
   border-radius: 5px;
 }
 
 .scroll::-webkit-scrollbar-thumb {
   background-color: #888;
-  /* Cor da "alça" de rolagem */
   border-radius: 5px;
 }
 
@@ -145,20 +134,45 @@
   background: #555;
 }
 
-.logoBoa {
-  position: relative;
-  left: 77px;
-  bottom: 7px;
-  margin-bottom: 20px;
-  width: 25px; 
-  filter: invert(1); 
+/* ========== ÁREA PRINCIPAL (CONTEÚDO) ========== */
+
+/* Container principal ao lado da sidebar */
+.contPrincipal {
+  margin-left: 250px;
 }
 
-.loginPage {
-  position: relative;
-  left: 0px;
+/* Caixa central com o formulário de URL */
+.containerURL {
+  max-width: 600px;
+  width: 100%;
+  background-color: #222831;
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid #444;
 }
 
+/* Estilização das abas de navegação (URL, Texto, Imagem) */
+.containerURL ul {
+  display: flex;
+  align-items: center;
+  margin-left: 37px;
+  justify-content: center;
+  border-bottom-color: #393E46;
+}
+
+.containerURL ul li a {
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilo do título “URL” */
+.textoURL {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* Hover nas abas (nav-tabs) */
 .nav-tabs .nav-link:hover {
   border: none;
   background-color: #393E46;
@@ -166,26 +180,32 @@
   cursor: pointer;
 }
 
-.offcanvas .nav-link:hover {
-  background-color: #393E46;
-  color: #fff;
-  border-radius: 5px;
-}
-
-.navbar-toggler:hover {
-  background-color: #393E46;
-  border-radius: 5px;
-}
-
+/* Espaço no último item da nav-link */
 .nav-link:last-child {
   margin-right: 10px;
-
 }
 
+/* Estilo específico para uma página de login (caso use) */
+.loginPage {
+  position: relative;
+  left: 0px;
+}
+
+/* ========== FOOTER ========== */
+
+/* Rodapé fixo com margem esquerda igual à sidebar */
 footer {
-  margin-left: 250px; 
-  width: calc(100% - 250px); 
-  position: fixed; 
-  bottom: 0; 
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  position: fixed;
+  bottom: 0;
   background-color: #222831;
+}
+
+/* ========== OUTROS ELEMENTOS ========== */
+
+/* Links dentro do container-fluid */
+.container-fluid a {
+  color: white;
+  margin-left: 10px;
 }
