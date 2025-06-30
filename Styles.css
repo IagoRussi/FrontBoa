@@ -57,7 +57,7 @@
 
 /* Cor de fundo da barra superior (navbar) */
 .fixed-top {
-  background-color: #222831;
+  background-color: black;
 }
 
 /* Ícone do botão hamburguer */
@@ -85,15 +85,12 @@
 
 /* ========== SIDEBAR ESQUERDA ========== */
 
-/* Cor de fundo geral da sidebar */
-.bgSidebar {
-  background-color: #393E46;
-}
+
 
 /* Estilo da sidebar à esquerda */
 .sidebarEsq {
   width: 250px;
-  background-color: #222831;
+  background-color: black;
   position: fixed;
   z-index: 1000;
   height: 100%;
@@ -141,11 +138,16 @@
   margin-left: 250px;
 }
 
+/* Cor de fundo geral da sidebar */
+.bgPrinc{
+  background-color: grey;
+}
+
 /* Caixa central com o formulário de URL */
 .containerURL {
   max-width: 600px;
   width: 100%;
-  background-color: #222831;
+  background-color: black;
   border-radius: 20px;
   padding: 2rem;
   border: 1px solid #444;
@@ -199,7 +201,7 @@ footer {
   width: calc(100% - 250px);
   position: fixed;
   bottom: 0;
-  background-color: #222831;
+  background-color: black;
 }
 
 /* ========== OUTROS ELEMENTOS ========== */
