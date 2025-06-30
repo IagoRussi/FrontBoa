@@ -1,0 +1,93 @@
+.offcanvas {
+  background-color: #18122B;
+  /* cor de fundo da sidebar */
+}
+
+.container-fluid a {
+  color: white;
+  margin-left: 10px;
+}
+
+.fixed-top {
+  background-color: #222831;
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.offcanvas {
+  background-color: #0d1117;
+  color: white;
+}
+
+.scroll {
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 10px;
+  /* Largura da barra */
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #888;
+  /* Fundo da barra */
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  /* Cor da "alça" de rolagem */
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.logoBoa {
+  position: relative;
+  left: 77px;
+  bottom: 7px;
+  margin-bottom: 20px;
+  width: 30px; 
+  filter: invert(1); 
+}
+
+.loginPage {
+  position: relative;
+  left: 0px;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  background-color: #393E46;
+  color: #fff;
+  cursor: pointer;
+}
+
+.offcanvas .nav-link:hover {
+  background-color: #393E46;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.navbar-toggler:hover {
+  background-color: #393E46;
+  border-radius: 5px;
+}
+
+.nav-link:last-child {
+  margin-right: 10px;
+
+}
