@@ -11,49 +11,56 @@
   <link rel="stylesheet" href="Styles.css">
 </head>
 
+<!-- Ofcanvas na direita da página -->
+
 <body>
-  <nav class="navbar fixed-top" style="margin-left: 250px;">
+    <!-- NAVBAR FIXA NO TOPO -->
+  <nav class="navbar fixed-top ms-topbar">
     <div class="container-fluid">
+      <!-- Logo / Marca -->
       <a class="navbar-brand" href="index.html">TrueBalance</a>
 
-      <div style="display: flex; align-items: center; gap: 15px;">
-        <a style="text-decoration: none;" href="login.html">Login</a>
-        <a style=" margin-right: 5px ; text-decoration: none;" href="cadastro.html">Cadastro</a>
+      <!-- Links de login e cadastro + botão do menu lateral -->
+      <div class="navbartop">
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <!-- Botão hamburguer para abrir o offcanvas -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"
-        style="width: 300px;">
-
+      <!-- MENU LATERAL (offcanvas) -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 navOffcanva">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Adicionar Site
-                Confiavel</a>
+              <a class="nav-link w-100 p3" href="#">Adicionar Site Confiável</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Configurações</a>
+              <a class="nav-link w-100 p3" href="#">Configurações</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Contato </a>
+              <a class="nav-link w-100 p3" href="#">Contato</a>
             </li>
-
+          </ul>
         </div>
       </div>
     </div>
   </nav>
 
+  <!-- CONTEÚDO PRINCIPAL -->
   <main>
-    <div class="d-flex vh-100" style="background-color: #393E46;">
-
-      <!-- Sidebar à esquerda -->
-      <div class="text-white p-4" style="width: 250px; background-color: #222831;">
-
+    <div class="d-flex vh-100 position bgSidebar">
+      
+      <!-- SIDEBAR ESQUERDA (fixa) -->
+      <div class="sidebar text-white p-4 sidebarEsq">
+        <!-- Logo -->
         <img class="logoBoa" src="./logo.png" alt="logo">
 
+        <!-- Histórico de URLs -->
         <div class="scroll">
           <h5 class="mb-4">Histórico</h5>
           <ul class="list-unstyled">
@@ -62,49 +69,50 @@
             <li class="mb-2"><i class="bi bi-link-45deg"></i> www.exemplo2.com</li>
             <li class="mb-2"><i class="bi bi-link-45deg"></i> www.exemplo3.com</li>
           </ul>
-
         </div>
       </div>
 
-      <!-- Conteúdo principal -->
-      <div class="d-flex justify-content-center align-items-center flex-grow-1">
-        <div
-          style="max-width: 600px; width: 100%; background-color: #222831; border-radius: 20px; padding: 2rem; border: 1px solid #444;">
+      <!-- ÁREA CENTRAL DO SITE (conteúdo principal) -->
+      <div class="content-container d-flex justify-content-center align-items-center flex-grow-1 w-100 contPrincipal">
+        <div class="containerURL">
 
-          <ul style="display: flex; align-items: center; margin-left: 37px; justify-content: center; border-bottom-color: #393E46;" class="nav nav-tabs mb-4">
+          <!-- Abas de navegação -->
+          <ul class="nav nav-tabs mb-4">
             <li class="nav-item">
-              <a style="border: none; text-decoration: none; color: white;" class="nav-link" href="#">URL</a>
+              <a class="nav-link" href="#">URL</a>
             </li>
             <li class="nav-item">
-              <a style="border: none; text-decoration: none; color: white;" class="nav-link" href="#">Texto</a>
+              <a class="nav-link" href="#">Texto</a>
             </li>
             <li class="nav-item">
-              <a style="border: none; text-decoration: none; color: white;" class="nav-link" href="#">Imagem</a>
+              <a class="nav-link" href="#">Imagem</a>
             </li>
           </ul>
 
-          <h1 class="text-center text-white mb-4" style="font-weight: bold; padding-bottom: 10px;">URL</h1>
+          <!-- Título da seção -->
+          <h1 class="text-center text-white mb-4 textoURL">URL</h1>
 
+          <!-- Formulário de envio -->
           <form class="text-center">
             <div class="mb-3">
               <input type="url" class="form-control" placeholder="Digite seu URL" required>
             </div>
-            <button type="submit" class="btn btn-primary w-100"
-              style="color: black; background-color: white; border: none;">
+            <button type="submit" class="btn btn-primary w-100 text-black bg-white border-0">
               Enviar
             </button>
           </form>
+
         </div>
       </div>
     </div>
   </main>
-  <footer class="text-center text-white py-3"
-    style="margin-left: 110px; position: fixed; bottom: 0; width: 100%; background-color: #222831;">
+
+  <!-- RODAPÉ -->
+  <footer class="text-center text-white py-3">
     © 2025 FakeCheck - Todos os direitos reservados.
   </footer>
 
-
-
+  <!-- Bootstrap JS (componentes como offcanvas, modal, etc.) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>

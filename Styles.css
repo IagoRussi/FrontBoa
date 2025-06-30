@@ -1,11 +1,101 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+   nav.navbar,
+    main,
+    footer {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+
+    .content-container {
+      margin-left: 0 !important;
+      width: 100% !important;
+    }
+  }
+
+  .ms-topbar {
+  margin-left: 250px;
+}
+
+.navbartop {
+  display: flex; 
+  align-items: center; 
+  gap: 15px;
+}
+.navbartop a {
+  text-decoration: none;
+}
+
+.navbartop a:last-of-type {
+  margin-right: 5px;
+}
+
+.navOffcanva a {
+  padding-left: 10px;
+  border-radius: 5px;
+  color: white;
+
+}
+
 .offcanvas {
   background-color: #18122B;
-  /* cor de fundo da sidebar */
+  /* cor de fundo do offcanva */
+}
+
+.bgSidebar{
+  background-color: #393E46;
+  /* cor de fundo do offcanva */
+}
+
+.sidebarEsq{
+  width: 250px; 
+  background-color: #222831; 
+  position: fixed;
+   z-index: 1000; 
+   height: 100%;
+   /* sidebar esquerda */
 }
 
 .container-fluid a {
   color: white;
   margin-left: 10px;
+}
+
+.contPrincipal {
+    margin-left: 250px;
+}
+
+.containerURL {
+  max-width: 600px; 
+  width: 100%; 
+  background-color: #222831; 
+  border-radius: 20px; 
+  padding: 2rem; 
+  border: 1px solid #444;
+}
+
+.containerURL ul {
+   display: flex; 
+   align-items: center; 
+   margin-left: 37px; 
+   justify-content: center; 
+   border-bottom-color: #393E46;
+}
+
+.containerURL ul li a{
+  border: none; 
+  text-decoration: none; 
+  color: white;
+}
+
+.textoURL{
+  font-weight: bold; padding-bottom: 10px;
 }
 
 .fixed-top {
@@ -30,7 +120,7 @@
 }
 
 .scroll {
-  height: 800px;
+  height: 600px;
   overflow-y: scroll;
 }
 
@@ -60,7 +150,7 @@
   left: 77px;
   bottom: 7px;
   margin-bottom: 20px;
-  width: 30px; 
+  width: 25px; 
   filter: invert(1); 
 }
 
@@ -90,4 +180,12 @@
 .nav-link:last-child {
   margin-right: 10px;
 
+}
+
+footer {
+  margin-left: 250px; 
+  width: calc(100% - 250px); 
+  position: fixed; 
+  bottom: 0; 
+  background-color: #222831;
 }
