@@ -1,7 +1,7 @@
 /* ========== ESTILOS GERAIS ========== */
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Poppins;
 }
 
 /* ========== RESPONSIVIDADE (TELAS PEQUENAS) ========== */
@@ -27,11 +27,42 @@
   border-bottom: 1px solid white;
 }
 
+#modo-toggle {
+  color: white;
+  padding-top: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.hoverNav {
+  width: 150px;
+  padding-left: 13px;
+}
+
+.logincad a:hover{
+  background-color: white;
+  transition: 0.2s;
+  color: black;
+}
+
+.logincad a {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+.hoverNav:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+
 /* Área de links (Login/Cadastro) no topo */
 .navbartop {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 
 .navbartop a {
@@ -40,8 +71,14 @@
 
 /* Espaço à direita apenas no último link (Cadastro) */
 .navbartop a:last-of-type {
-  margin-right: 5px;
+  margin-right: 20px;
 }
+
+.navbartop a:first-of-type {
+  margin-left: 20px;
+
+}
+
 
 /* Estilização dos links dentro do menu offcanvas */
 .navOffcanva a {
@@ -67,21 +104,22 @@
 }
 
 /* Cor do botão hamburguer */
-.navbar-toggler {
+.hamburg {
   color: #fff;
+  border: white 1px solid;
 }
 
 /* Hover no botão hamburguer */
-.navbar-toggler:hover {
-  background-color: #393E46;
-  border-radius: 5px;
+.hamburg:hover {
+  transition: 0.2s;
+  
 }
 
 /* Hover nos links do offcanvas */
 .offcanvas .nav-link:hover {
-  background-color: #393E46;
-  color: #fff;
+  background-color: white;
   border-radius: 5px;
+  transition: 0.2s  ;
 }
 
 /* ========== SIDEBAR ESQUERDA ========== */
@@ -159,16 +197,26 @@
 .containerURL ul {
   display: flex;
   align-items: center;
-  margin-left: 37px;
+  margin-right: 22px;
   justify-content: center;
   border-bottom-color: #393E46;
+  font-weight: bold;
 }
+
 
 .containerURL ul li a {
   border: none;
   text-decoration: none;
   color: white;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+.containerURL ul .nav-item {
+  margin-left: 30px;
+}
+
 
 /* Estilo do título “URL” */
 .textoURL {
