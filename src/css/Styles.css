@@ -122,6 +122,11 @@
   transition: 0.2s  ;
 }
 
+.offcanvas .nav-link:focus {
+  background-color: transparent;
+  color: white;
+}
+
 /* ========== SIDEBAR ESQUERDA ========== */
 
 
@@ -262,12 +267,7 @@ footer {
   margin-left: 10px;
 }
 
-.offcanvas .nav-link:focus,
-.offcanvas .nav-link:active,
-.offcanvas .nav-link:visited {
-  background-color: transparent;
-  color: white;
-}
+
 
 .nav-tabs .nav-link {
   border: none;
