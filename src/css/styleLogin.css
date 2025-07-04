@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000 0%, #161616 100%);
+}
+
+.containerLogin {
+    background-color: black;
+    height: 80%; 
+    box-shadow: 0 16px 40px 0 rgba(0,0,0,0.9);
+}
+
+.formularioLogin {
+    padding-top: 200px;
+    padding-left: 50px;
+    width: 35%;
+}
+
+.divImagem {
+    position: absolute;
+    top: 15%;
+    margin-left: 145px;
+    margin-top: 40px;
+}
+
+.formularioLogin input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: black;
+    border: 0.5px solid white;
+}
+
+
+.botaoLogin {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.formularioLogin input:focus,
+.botaoLogin:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: white !important;
+    border: 1px solid white !important;
+    background-color: black;
+    color: white;
+}
+
+.divImagem img {
+    width: 50px;
+    filter: invert(1);
+
+    
+}
+
+.backLogin {
+    background: url(../../img/BackTela.webp) no-repeat center center;
+    background-size: cover;
+    width: 65%;
+    height: 100%;
+}
