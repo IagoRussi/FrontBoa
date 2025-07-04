@@ -1,3 +1,8 @@
+*{
+    font-family: Poppins;
+}
+
+
 html, body {
     height: 100%;
     width: 100%;
@@ -53,7 +58,59 @@ html, body {
     width: 50px;
     filter: invert(1);
 
-    
+}
+
+/* Responsividade para logo e formulário */
+@media (max-width: 900px) {
+  .formularioLogin {
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 90%;
+  }
+  .divImagem {
+    position: static;
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .divImagem img {
+    width: 40px;
+  }
+  .containerLogin {
+    width: 100%;
+    min-width: 0;
+  }
+  .backLogin {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .divImagem {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .formularioLogin {
+    padding-top: 40px;
+    padding-left: 5vw;
+    width: 98vw;
+  }
+  .divImagem img {
+    width: 32px;
+  }
+  .containerLogin {
+    width: 100vw;
+    min-width: 0;
+    box-shadow: none;
+  }
+  .backLogin {
+    width: 100vw;
+    height: 40vh;
+  }
 }
 
 .backLogin {
