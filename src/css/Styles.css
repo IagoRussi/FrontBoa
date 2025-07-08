@@ -24,7 +24,6 @@
 /* Margem lateral esquerda da navbar */
 .ms-topbar {
   margin-left: 250px;
-  border-bottom: 1px solid white;
 }
 
 #modo-toggle {
@@ -106,7 +105,6 @@
 /* Cor do botão hamburguer */
 .hamburg {
   color: #fff;
-  border: white 1px solid;
 }
 
 /* Hover no botão hamburguer */
@@ -138,7 +136,6 @@
   position: fixed;
   z-index: 1000;
   height: 100%;
-  border-right: solid 1px white;
 }
 
 /* Logo dentro da sidebar */
@@ -185,7 +182,7 @@
 
 /* Cor de fundo geral da sidebar */
 .bgPrinc{
-  background-color: black;
+  background: linear-gradient(135deg, #000 0%, #161616 100%);
 }
 
 /* Caixa central com o formulário de URL */
@@ -195,7 +192,6 @@
   background-color: black;
   border-radius: 20px;
   padding: 2rem;
-  border: 1px solid #444;
 }
 
 /* Estilização das abas de navegação (URL, Texto, Imagem) */
@@ -256,7 +252,6 @@ footer {
   width: calc(100% - 250px);
   position: fixed;
   bottom: 0;
-  border-top: 1px solid white;
 }
 
 /* ========== OUTROS ELEMENTOS ========== */
