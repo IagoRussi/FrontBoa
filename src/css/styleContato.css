@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Poppins;
 }
 
@@ -15,16 +15,12 @@ body {
     align-items: center;
 }
 
-.imagemContato {
-    background: url(../../img/contatoImagem.webp) no-repeat center center;
-    background-size: cover;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
 
 .containerContato {
     height: 80%;
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.9);
 }
+
 
 
 .textoContato input {
@@ -57,4 +53,77 @@ body {
     width: 100%;
     color: white;
     border-radius: 5px;
+}
+
+.iconsContato a {
+    color: white;
+
+}
+
+.tituloContato a {
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.tituloContato a:hover {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+@media (max-width: 992px) {
+    .containerContato {
+        flex-direction: column !important;
+        width: 95% !important;
+        min-width: unset !important;
+        height: auto !important;
+        padding: 16px 0 !important;
+    }
+    .textoContato, .imagemContato {
+        width: 100% !important;
+        min-width: unset !important;
+        padding: 0 10px !important;
+    }
+    .textoContato {
+        align-items: stretch !important;
+        padding-top: 0 !important;
+        padding-left: 0 !important;
+    }
+    .imagemContato {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .tituloContato a {
+        font-size: 18px;
+        padding: 4px 8px;
+    }
+    .iconsContato {
+        gap: 8px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .containerContato {
+        width: 100% !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+    .tituloContato a {
+        font-size: 16px;
+        padding: 2px 4px;
+    }
+    .textoContato input,
+    .textoContato textarea,
+    .textoContato button {
+        width: 100% !important;
+        font-size: 14px;
+    }
+    .iconsContato a {
+        font-size: 1.2rem !important;
+    }
 }
