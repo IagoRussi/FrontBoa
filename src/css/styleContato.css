@@ -18,23 +18,21 @@ body {
 .imagemContato {
     background: url(../../img/contatoImagem.webp) no-repeat center center;
     background-size: cover;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .containerContato {
     height: 80%;
 }
 
-.textoContato {
-    padding-left: 10%;
-    padding-top: 12%;
-}
 
 .textoContato input {
     border-radius: 5px;
     border: 0.5px solid white;
     background-color: black;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .textoContato textarea {
@@ -42,7 +40,7 @@ body {
     border: 0.5px solid white;
     background-color: black;
     color: white;
-    width: 50%;
+    width: 100%;
 }
 
 .textoContato input:focus,
@@ -56,10 +54,7 @@ body {
 }
 
 .textoContato button {
-    margin-top: 10px;
-    width: 50%;
-    height: 10%;
-    color: black;
-    border: 0.5px solid white;
+    width: 100%;
+    color: white;
     border-radius: 5px;
 }
