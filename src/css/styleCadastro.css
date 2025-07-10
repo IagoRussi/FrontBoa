@@ -1,0 +1,75 @@
+* {
+    font-family: Poppins;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000 0%, #161616 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerCadastro {
+    height: 80%;
+    box-shadow: 0 16px 40px 0 rgba(0, 0, 0, 0.9);
+    padding: 0px;
+}
+
+.textoCadastro {
+  width: 35%;
+  padding-bottom: 10%;
+}
+
+.textoCadastro input{
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 12%;
+  padding-left: 5px;
+  background-color: black;
+  color: white;
+}
+
+.textoCadastro input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: white;
+  color: black;
+}
+
+.textoCadastro form {
+  width: 75%;
+  padding-left: 5%;
+}
+
+.textoCadastro label:last-of-type{
+  padding-top: 10px;
+}
+
+.textoCadastro button {
+  margin-top: 5%;
+  width: 90%;
+}
+
+.backLogin {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../img/backLogin.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.textoCadastro a {
+  padding-left: 2%;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+}

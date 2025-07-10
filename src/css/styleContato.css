@@ -74,39 +74,6 @@ body {
 
 }
 
-@media (max-width: 992px) {
-    .containerContato {
-        flex-direction: column !important;
-        width: 95% !important;
-        min-width: unset !important;
-        height: auto !important;
-        padding: 16px 0 !important;
-    }
-    .textoContato, .imagemContato {
-        width: 100% !important;
-        min-width: unset !important;
-        padding: 0 10px !important;
-    }
-    .textoContato {
-        align-items: stretch !important;
-        padding-top: 0 !important;
-        padding-left: 0 !important;
-    }
-    .imagemContato {
-        margin-top: 24px;
-        margin-bottom: 12px;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-    .tituloContato a {
-        font-size: 18px;
-        padding: 4px 8px;
-    }
-    .iconsContato {
-        gap: 8px !important;
-    }
-}
-
 @media (max-width: 576px) {
     .containerContato {
         width: 100% !important;
